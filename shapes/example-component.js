@@ -8,7 +8,10 @@ import {
 
 class Shape extends React.Component{
 
-    render(){}
+
+    render(){
+
+    }
 
 }
 AppRegistry.registerComponent('Example', () => Shape);
