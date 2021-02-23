@@ -10,14 +10,16 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
 
+  const location = new Location ([0,0, -2]);
+
   // Render your app content to the default cylinder surface
   r360.renderToSurface(
     r360.createRoot('Geometry', { /* initial props */ }),
-    r360.getDefaultSurface()
+    location
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('watercolor_world.jpg'));
 }
 
 window.React360 = {init};
