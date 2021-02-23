@@ -8,14 +8,13 @@ import {
   Sphere,
   asset
 } from 'react-360';
-import Entity from 'Entity';
+
 
 export default class Geometry extends React.Component {
   render() {
     return (
       <View>
-        <Box dimWidth={0.5} dimHeight={0.5} dimDepth={0.5}style={{ color: 'green', transform: [{translate: [-1, 0, 0]}]}}/>
-        <Sphere radius={0.5} widthSegments={20} heightSegments={12}  style={{ color: 'red', transform: [{ translateX: 0 }] }}/>
+        <Sphere radius={0.5} widthSegments={20} heightSegments={12}  style={{ color: 'aqua', transform: [{ translateX: 0 }] }}/>
       </View>
     );
   }
