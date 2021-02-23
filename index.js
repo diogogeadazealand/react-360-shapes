@@ -4,17 +4,15 @@ import {
   StyleSheet,
   Text,
   View,
+  Box
 } from 'react-360';
 
 export default class Geometry extends React.Component {
   render() {
     return (
-      <View style={styles.panel}>
-        <View style={styles.greetingBox}>
-          <Text style={styles.greeting}>
-            Welcome to React 360
-          </Text>
-        </View>
+      <View>
+       <Box dimWidth={0.5} dimHeight={0.5} dimDepth={0.5} 
+          style={{color: 'green', transform: [{translate: [-1,0,0]}]}}/>
       </View>
     );
   }
