@@ -2,17 +2,20 @@ import React from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  View
+  View,
+  Plane
 } from 'react-360';
 import SphereComponent from './shapes/SphereComponent';
 import PlaneShape from './shapes/plane'
 import BoxComponent from './shapes/boxComponent'
 import CylinderComponent from './shapes/CylinderComponent';
+import ControlPanel from './ControlPanel/controlpanel';
 
 export default class Geometry extends React.Component {
   render() {
     return (
       <View>
+        <ControlPanel></ControlPanel>
         <PlaneShape></PlaneShape>
         <SphereComponent></SphereComponent>
         <BoxComponent></BoxComponent>
