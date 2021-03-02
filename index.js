@@ -2,9 +2,7 @@ import React from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  Text,
-  View,
-  Sphere
+  View
 } from 'react-360';
 import SphereComponent from './shapes/SphereComponent';
 import PlaneShape from './shapes/plane'
