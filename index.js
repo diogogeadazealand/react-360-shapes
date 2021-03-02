@@ -12,11 +12,6 @@ import {
 
 export default class Geometry extends React.Component {
   render() {
-    return (
-      <View>
-        <Sphere radius={0.5} widthSegments={20} heightSegments={12}  style={{ color: 'aqua', transform: [{ translateX: 0 }] }}/>
-      </View>
-    );
   }
 };
 
