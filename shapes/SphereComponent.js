@@ -7,7 +7,7 @@ import {
     Sphere
   } from 'react-360';
 
-class Shape extends React.Component{
+class SphereComponent extends React.Component{
   
   render() {
     return (
