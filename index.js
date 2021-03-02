@@ -1,9 +1,11 @@
 import React from 'react';
+import SphereComponent from './shapes/SphereComponent';
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View,
+  Sphere
 } from 'react-360';
 import PlaneShape from './shapes/plane'
 
@@ -12,6 +14,7 @@ export default class Geometry extends React.Component {
     return (
       <View>
         <PlaneShape></PlaneShape>
+        <SphereComponent></SphereComponent>
       </View>
     );
   }
