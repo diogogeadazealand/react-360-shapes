@@ -19,7 +19,7 @@ const location = new Location([0,0,-2]);
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('watercolor_world.jpg'));
 }
 
 window.React360 = {init};
