@@ -9,6 +9,7 @@ import {
 import SphereComponent from './shapes/SphereComponent';
 import PlaneShape from './shapes/plane'
 import BoxComponent from './shapes/boxComponent'
+import CylinderComponent from './shapes/CylinderComponent';
 
 export default class Geometry extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class Geometry extends React.Component {
         <PlaneShape></PlaneShape>
         <SphereComponent></SphereComponent>
         <BoxComponent></BoxComponent>
+        <CylinderComponent></CylinderComponent>
       </View>
     );
   }
