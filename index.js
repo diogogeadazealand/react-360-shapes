@@ -1,5 +1,4 @@
 import React from 'react';
-import SphereComponent from './shapes/SphereComponent';
 import {
   AppRegistry,
   StyleSheet,
@@ -7,7 +6,9 @@ import {
   View,
   Sphere
 } from 'react-360';
+import SphereComponent from './shapes/SphereComponent';
 import PlaneShape from './shapes/plane'
+import BoxComponent from './shapes/boxComponent'
 
 export default class Geometry extends React.Component {
   render() {
@@ -15,6 +16,7 @@ export default class Geometry extends React.Component {
       <View>
         <PlaneShape></PlaneShape>
         <SphereComponent></SphereComponent>
+        <BoxComponent></BoxComponent>
       </View>
     );
   }

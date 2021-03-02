@@ -7,7 +7,7 @@ import {
   Box
 } from 'react-360';
 
-class Geometry extends React.Component {
+export default class BoxComponent extends React.Component {
   render() {
     return (
       <View>
