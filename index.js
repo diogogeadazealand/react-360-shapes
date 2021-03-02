@@ -1,4 +1,5 @@
 import React from 'react';
+import SphereComponent from './shapes/SphereComponent';
 import {
   AppRegistry,
   StyleSheet,
@@ -11,7 +12,13 @@ import {
 
 
 export default class Geometry extends React.Component {
-  render() {
+  render() 
+  {
+    return ( 
+    <View> 
+      <SphereComponent/>
+      </View>
+  )
   }
 };
 

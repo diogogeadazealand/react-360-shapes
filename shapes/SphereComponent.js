@@ -7,7 +7,7 @@ import {
     Sphere
   } from 'react-360';
 
-class SphereComponent extends React.Component{
+export default class SphereComponent extends React.Component{ 
   
   render() {
     return (
