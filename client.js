@@ -3,8 +3,6 @@
 
 import {ReactInstance, Location} from 'react-360-web';
 
-const location = new Location([0,0,-2]);
-
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
     // Add custom options here
@@ -12,6 +10,8 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
 
+
+const location = new Location([0,0,-2]);
   // Render your app content to the default cylinder surface
   r360.renderToLocation(
     r360.createRoot('Geometry', { /* initial props */ }),

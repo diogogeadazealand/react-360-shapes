@@ -4,19 +4,15 @@ import {
   StyleSheet,
   Text,
   View,
-  Sphere
+  Box
 } from 'react-360';
-import SphereComponent from './shapes/SphereComponent';
-import PlaneShape from './shapes/plane'
-import BoxComponent from './shapes/boxComponent'
 
-export default class Geometry extends React.Component {
+export default class BoxComponent extends React.Component {
   render() {
     return (
       <View>
-        <PlaneShape></PlaneShape>
-        <SphereComponent></SphereComponent>
-        <BoxComponent></BoxComponent>
+       <Box dimWidth={0.5} dimHeight={0.5} dimDepth={0.5} 
+          style={{color: 'red', transform: [{translate: [-1,0,0]}]}}/>
       </View>
     );
   }
