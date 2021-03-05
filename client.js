@@ -17,21 +17,17 @@ function init(bundle, parent, options = {}) {
 const location = new Location([0,0,-2]);
   // Render your app content to the default cylinder surface
   r360.renderToLocation(
-    r360.createRoot('AdvancedShape', {state: state}),
+    r360.createRoot('AdvancedShape'),
     location
   );
 
 
   r360.renderToSurface(
-    r360.createRoot('AdvancedSurface', {test: state}),
+    r360.createRoot('AdvancedSurface'),
     r360.getDefaultSurface()
   )
   // Load the initial environment
   r360.compositor.setBackground(r360.getAssetURL('watercolor_world.jpg'));
 }
-
-const state = {
-  curShape: ""
-};
 
 window.React360 = {init};

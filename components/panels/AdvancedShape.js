@@ -18,8 +18,6 @@ export default class AdvancedShape extends React.Component{
         ]}
     };
 
-    event = undefined;
-
 
     constructor(props){
         super(props);
@@ -29,7 +27,6 @@ export default class AdvancedShape extends React.Component{
         };
 
         shapeModule.ChangeShape = this.ChangeShape;
-        shapeModule.Rotate = this.Rotate;
     }
 
     ChangeShape = (shape) => {
