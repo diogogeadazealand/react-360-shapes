@@ -8,11 +8,16 @@ import {
 } from 'react-360';
 
 export default class BoxComponent extends React.Component {
+
+  constructor(props){
+    super(props);
+  }
+
   render() {
     return (
       <View>
-       <Box dimWidth={0.5} dimHeight={0.5} dimDepth={0.5} 
-          style={{color: 'red', transform: [{translate: [-1,0,0]}]}}/>
+       <Box dimWidth={this.props.width} dimHeight={this.props.height} dimDepth={this.props.length} 
+          style={this.props.style}/>
       </View>
     );
   }
