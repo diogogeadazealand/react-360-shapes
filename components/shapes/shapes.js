@@ -1,7 +1,7 @@
 import BoxComponent from "./boxComponent";
-import CylinderComponent from './cylinderComponent';
+import CylinderComponent from './CylinderComponent';
 import PlaneComponent from "./planeComponent";
-import SphereComponent from "./sphereComponent";
+import SphereComponent from "./SphereComponent";
 
 export { 
     CylinderComponent,
